@@ -23,11 +23,11 @@ author:
   # Biographic information
   avatar           : "王俊程证件照.png"
   name             : "William WANG"
-  pronouns         : # example: "she/her"  
+  pronouns         : "He/him"
   bio              : "Dream it possible"
-  location         : "Guangzhou City, Guangdong Province, China"
-  employer         : "The Hong Kong University of Science and Technology (Guangzhou)"
-  uri              : # URL
+  location         : "Guangzhou"
+  employer         : "HKUST(GZ)"
+  uri              : "https://william-wang02.github.io/"
   email            : "w18253193156@163.com" 
 
   # Academic websites
