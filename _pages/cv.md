@@ -12,7 +12,8 @@ redirect_from:
 Education
 ======
 * Master of Philosophy. in Financial Technology, The Hong Kong University of Science and Technology (Guangzhou), 2027 (expected)
-* Bachelor of Business and Administration in Finance (First-honor degree), BNU-HKBU United International College, 2025(Expected)
+* Bachelor of Business and Administration(Honours) in Finance , BNU-HKBU United International College, 2025(Expected)
+*   Minor in Computer Science and Technology
 
 Intern experience
 ======
