@@ -11,11 +11,10 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Master of Philosophy. in Financial Technology, The Hong Kong University of Science and Technology (Guangzhou), 2027 (expected)
+* Bachelor of Business and Administration in Finance (First-honor degree), BNU-HKBU United International College, 2025(Expected)
 
-Work experience
+Intern experience
 ======
 * Spring 2024: Academic Pages Collaborator
   * Github University
