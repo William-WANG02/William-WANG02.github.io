@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "Academic Pages is a ready-to-fork GitHub Pages template for academic personal websites"
+title: "About Me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,6 +9,9 @@ redirect_from:
 
 Self-Introduction
 My name is WANG Juncheng (William) and I'm thrilled to be here as a graduate student pursing my Master degree of Philosophy in Financial Technology. I come from interdisciplinary academic and professional background, which has cultivated my passion for solving complex financial problems with advanced technology.
+
+Find my CV here:
+
 
 A data-driven personal website
 ======
