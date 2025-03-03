@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历 | 金融专业</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="current-time" id="current-time"></div>
+            <div class="university-name">HKUST(GZ) Juncheng WANG</div>
+        </div>
+    </div>
+
+    <!-- 添加暗黑模式切换按钮 -->
+    <button id="darkModeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <!-- 在 header 后添加导航栏 -->
+        <nav class="nav-bar fade-in">
+            <div class="nav-logo">
+                <img src="HKUSTGZlogo.png" alt="HKUST GZ Logo" class="nav-profile-pic">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item active">简历主页</a>
+                <a href="internships.html" class="nav-item">实习经历</a>
+                <a href="competitions.html" class="nav-item">比赛经历</a>
+                <a href="courses.html" class="nav-item">专业课程及技能</a>
+                <a href="portfolio.html" class="nav-item">作品展示</a>
+            </div>
+        </nav>
+
+        <!-- 个人信息部分 -->
+        <header class="header fade-in">
+            <div class="profile">
+                <div class="profile-content">
+                    <h1>张三</h1>
+                    <p class="title">金融学士 | 投资分析师实习生</p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> zhangsan@email.com</p>
+                        <p><i class="fas fa-phone"></i> +86 123 4567 8900</p>
+                        <p><i class="fas fa-map-marker-alt"></i> 上海市</p>
+                    </div>
+                    <p class="bio">
+                        致力于金融市场分析和投资研究的准金融学士。具有扎实的金融理论基础和实践经验，熟悉各类金融工具和分析方法。
+                    </p>
+                </div>
+                <div class="profile-photo">
+                    <img src="王俊程证件照.jpg" alt="张三证件照" class="id-photo">
+                </div>
+            </div>
+        </header>
+
+        <!-- 教育背景 -->
+        <section class="section fade-in">
+            <h2>教育背景</h2>
+            <div class="entry">
+                <h3>某知名大学</h3>
+                <p class="date">2020 - 2024</p>
+                <p>金融学学士学位</p>
+                <ul>
+                    <li>主修课程：投资学、公司金融、金融市场、风险管理</li>
+                    <li>GPA: 3.8/4.0</li>
+                    <li>金融建模协会会长</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 实习经历 -->
+        <section class="section fade-in">
+            <h2>实习经历</h2>
+            <div class="section-header">
+                <span>最新经历</span>
+                <a href="internships.html" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="entry">
+                <h3>某投资银行 - 投资分析师实习生</h3>
+                <p class="date">2023.06 - 2023.09</p>
+                <div class="tags">
+                    <span class="tag">投资分析</span>
+                    <span class="tag">并购</span>
+                    <span class="tag">财务建模</span>
+                </div>
+                <ul>
+                    <li>参与企业估值分析，协助完成3个并购项目尽职调查</li>
+                    <li>建立财务模型，进行市场研究和数据分析</li>
+                    <li>编写行业分析报告和投资建议书</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 比赛经历 -->
+        <section class="section fade-in">
+            <h2>比赛经历</h2>
+            <div class="section-header">
+                <span>主要经历</span>
+                <a href="competitions.html" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="entry">
+                <h3>某金融建模大赛 - 全国一等奖</h3>
+                <p class="date">2023.04</p>
+                <div class="tags">
+                    <span class="tag">金融建模</span>
+                    <span class="tag">数据分析</span>
+                </div>
+                <ul>
+                    <li>带领团队完成对XX行业的深度分析和建模</li>
+                    <li>运用Python和Excel进行数据处理和模型构建</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- 技能特长改为专业课程及技能 -->
+        <section class="section fade-in">
+            <h2>专业课程及技能</h2>
+            <div class="section-header">
+                <span>核心技能</span>
+                <a href="courses.html" class="view-all">查看全部 <i class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="skills">
+                <div class="skill-category">
+                    <h3>专业技能</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="财务分析">
+                            <div class="skill-info">
+                                <span class="skill-name">财务分析</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="投资组合管理">
+                            <div class="skill-info">
+                                <span class="skill-name">投资组合管理</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="风险评估">
+                            <div class="skill-info">
+                                <span class="skill-name">风险评估</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item" data-skill="金融建模">
+                            <div class="skill-info">
+                                <span class="skill-name">金融建模</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>软件工具</h3>
+                    <ul>
+                        <li>Excel高级应用</li>
+                        <li>Bloomberg Terminal</li>
+                        <li>Wind金融终端</li>
+                        <li>Python数据分析</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- 修改自我评价部分的HTML结构 -->
+        <section class="section fade-in">
+            <h2>自我评价</h2>
+            <div class="entry">
+                <p>作为一名即将毕业的金融专业学生，我具备扎实的理论基础和丰富的实践经验。在学习过程中，我注重理论与实践的结合，通过多段实习和比赛经历，培养了专业分析能力和团队协作精神。</p>
+                
+                <p>我善于学习新知识，能够快速适应新环境，具有较强的抗压能力和时间管理能力。在金融建模协会担任会长期间，锻炼了我的领导能力和组织能力。</p>
+                
+                <p>我热爱金融行业，期望能够在投资银行、资产管理或金融科技领域发展，为金融市场的创新和发展贡献自己的力量。</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部信息栏 -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-photo">
+                    <img src="campus.png" alt="HKUST GZ Campus">
+                </div>
+                <div class="footer-address">
+                    HKUST, No.1 Du Xue Rd, Nansha District, Guangzhou
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> zhangsan@email.com</p>
+                    <p><i class="fas fa-phone"></i> +86 123 4567 8900</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 HKUST(GZ)    William Page
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
