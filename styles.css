@@ -1,0 +1,855 @@
+/* 全局变量定义 - 用于主题颜色和样式 */
+:root {
+    --primary-color: #24292f;      /* 主要文本颜色 */
+    --secondary-color: #57606a;    /* 次要文本颜色 */
+    --background-color: #f6f8fa;   /* 页面背景色 */
+    --card-background: #ffffff;    /* 卡片背景色 */
+    --border-color: #d0d7de;       /* 边框颜色 */
+    --hover-color: #f6f8fa;        /* 悬停效果颜色 */
+    --link-color: #0969da;         /* 链接颜色 */
+    --green-color: #2da44e;        /* 绿色强调色 */
+}
+
+/* 全局重置样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, Arial, sans-serif; /* 将字体改为Helvetica */
+}
+
+/* 页面主体样式 */
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease; /* 平滑过渡效果 */
+}
+
+/* 内容容器样式 - 控制页面主体内容的宽度和居中 */
+.container {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+/* 头部个人信息区域样式 */
+.header {
+    background-color: var(--card-background);
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 个人资料区域布局 */
+.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+/* 个人资料内容区域 */
+.profile-content {
+    flex: 1;
+}
+
+/* 证件照容器样式 */
+.profile-photo {
+    flex: 0 0 150px; /* 固定宽度 */
+}
+
+/* 证件照样式 */
+.id-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 4px; /* 轻微圆角 */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* 轻微阴影 */
+    border: none; /* 无边框 */
+}
+
+/* 个人资料名称样式 */
+.profile h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 职位标题样式 */
+.title {
+    display: inline-block;
+    padding: 0.3em 0.8em;
+    background-color: var(--background-color);
+    border: 1px solid var(--border-color);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+/* 联系信息区域样式 */
+.contact-info {
+    display: flex;
+    gap: 1.5rem;
+    color: var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+.contact-info p {
+    display: flex;
+    align-items: center;
+}
+
+.contact-info i {
+    margin-right: 0.5rem;
+}
+
+/* 内容区块样式 - 用于各个简历部分 */
+.section {
+    background-color: var(--card-background);
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid var(--border-color);
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* 区块标题样式 */
+.section h2 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--primary-color);
+}
+
+/* 条目样式 - 用于经历、项目等 */
+.entry {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border: 1px solid transparent;
+    border-radius: 6px;
+}
+
+/* 条目悬停效果 */
+.entry:hover {
+    border-color: var(--border-color);
+    background-color: var(--hover-color);
+}
+
+/* 条目标题样式 */
+.entry h3 {
+    color: var(--link-color);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* 日期标签样式 */
+.date {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    background-color: var(--background-color);
+    border-radius: 2em;
+    color: var(--secondary-color);
+    font-size: 0.85rem;
+    margin-bottom: 0.8rem;
+}
+
+/* 列表样式重置 */
+ul {
+    list-style: none;
+    margin-left: 0;
+}
+
+/* 列表项样式 */
+li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+/* 列表项前的圆点样式 */
+li:before {
+    content: "•";
+    color: var(--secondary-color);
+    position: absolute;
+    left: 0.5rem;
+}
+
+/* 技能区域网格布局 */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 技能类别样式 */
+.skill-category {
+    background-color: var(--background-color);
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+/* 技能类别标题样式 */
+.skill-category h3 {
+    color: var(--primary-color);
+    font-size: 1rem;
+    margin-bottom: 0.8rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 个人简介样式 */
+.bio {
+    margin-top: 1rem;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* 标签组样式 */
+.tags {
+    margin-bottom: 1rem;
+}
+
+/* 单个标签样式 */
+.tag {
+    display: inline-block;
+    padding: 0.2em 0.6em;
+    margin: 0 0.5em 0.5em 0;
+    background-color: #ddf4ff;
+    color: var(--link-color);
+    border-radius: 2em;
+    font-size: 0.85rem;
+    border: 1px solid #54aeff40;
+}
+
+/* 移动设备响应式布局 */
+@media (max-width: 600px) {
+    .container {
+        margin: 1rem auto;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
+
+/* 暗黑模式样式变量 */
+.dark-mode {
+    --primary-color: #c9d1d9;
+    --secondary-color: #8b949e;
+    --background-color: #0d1117;
+    --card-background: #161b22;
+    --border-color: #30363d;
+    --hover-color: #1f2428;
+    --link-color: #58a6ff;
+}
+
+/* 主题切换按钮样式 */
+.theme-toggle {
+    position: fixed;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.5rem;
+    border-radius: 50%;
+    border: 1px solid var(--border-color);
+    background-color: var(--card-background);
+    color: var(--secondary-color);
+    cursor: pointer;
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+/* 主题切换按钮悬停效果 */
+.theme-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* 技能条基础样式 */
+.skill-item {
+    margin-bottom: 1rem;
+}
+
+/* 技能信息显示区域 */
+.skill-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+/* 技能名称样式 */
+.skill-name {
+    font-weight: 500;
+}
+
+/* 技能百分比样式 */
+.skill-percentage {
+    color: var(--secondary-color);
+}
+
+/* 技能进度条容器 */
+.skill-bar {
+    height: 8px;
+    background-color: var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+/* 技能进度条填充部分 */
+.skill-progress {
+    height: 100%;
+    background-color: var(--link-color);
+    width: 0;
+    transition: width 1.5s ease-in-out;
+}
+
+/* 导航栏样式增强 */
+.nav-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--card-background);
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid var(--border-color);
+    width: 100%; /* 确保导航栏占满容器宽度 */
+}
+
+/* 导航栏照片容器 */
+.nav-logo {
+    margin-right: 1.5rem;
+    display: flex;
+    align-items: center;
+    height: 45px; /* 固定高度与导航栏一致 */
+}
+
+/* 导航栏照片样式 */
+.nav-profile-pic {
+    height: 100%; /* 使图片高度填充容器 */
+    width: auto; /* 保持图片比例 */
+    object-fit: contain; /* 确保图片完整显示 */
+    border: none; /* 移除边框 */
+}
+
+/* 导航链接容器 */
+.nav-links {
+    display: flex;
+    flex-wrap: nowrap; /* 防止按钮换行 */
+    flex-grow: 1;
+    justify-content: space-between; /* 平均分布按钮 */
+}
+
+/* 导航项样式增强 */
+.nav-item {
+    text-decoration: none;
+    color: var(--secondary-color);
+    padding: 0.6rem 0; /* 移除左右内边距 */
+    text-align: center; /* 文本居中 */
+    flex: 1; /* 平均分配空间 */
+    margin: 0 0.5rem; /* 添加左右外边距 */
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap; /* 防止文本换行 */
+}
+
+/* 导航项悬停效果 */
+.nav-item:hover {
+    color: var(--link-color);
+    background-color: rgba(9, 105, 218, 0.08);
+    transform: translateY(-2px);
+}
+
+/* 导航项激活状态 */
+.nav-item.active {
+    color: white;
+    background-color: var(--link-color);
+    font-weight: 600;
+}
+
+/* 导航项激活状态悬停效果 */
+.nav-item.active:hover {
+    background-color: #0550a0;
+    box-shadow: 0 2px 8px rgba(9, 105, 218, 0.3);
+}
+
+/* 导航项点击效果 */
+.nav-item:active {
+    transform: scale(0.97);
+}
+
+/* 导航项波纹效果 */
+.nav-item::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(9, 105, 218, 0.1);
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.5s ease;
+    z-index: -1;
+}
+
+.nav-item:hover::after {
+    transform: translate(-50%, -50%) scale(2.5);
+}
+
+/* 响应式导航栏 */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        padding: 1rem;
+    }
+    
+    .nav-logo {
+        margin-right: 0;
+        margin-bottom: 1rem;
+        justify-content: center;
+    }
+    
+    .nav-links {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .nav-item {
+        flex: 0 0 auto;
+        padding: 0.6rem 1rem;
+        margin: 0.25rem;
+    }
+}
+
+/* 查看全部链接样式 */
+.view-all {
+    color: var(--link-color);
+    text-decoration: none;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+}
+
+/* 查看全部链接图标样式 */
+.view-all i {
+    margin-left: 0.5rem;
+    transition: transform 0.2s ease;
+}
+
+/* 查看全部链接悬停效果 */
+.view-all:hover i {
+    transform: translateX(3px);
+}
+
+/* 区块头部样式 - 用于标题和查看全部链接 */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 淡入动画效果 */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* 作品展示网格布局 */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 修改为固定2列 */
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+/* 确保作品展示页面高度足够 */
+.portfolio-page {
+    min-height: calc(100vh - 400px); /* 减去顶部和底部的高度 */
+}
+
+/* 作品项样式 */
+.portfolio-item {
+    background-color: var(--card-background); /* 改为卡片背景色 */
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem; /* 确保底部有足够间距 */
+}
+
+/* 作品项悬停效果 */
+.portfolio-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* 作品内容样式 */
+.portfolio-content {
+    padding: 1.5rem;
+    flex-grow: 1; /* 允许内容区域伸展填充可用空间 */
+    display: flex;
+    flex-direction: column;
+}
+
+/* 作品标题样式 */
+.portfolio-content h3 {
+    color: var(--link-color);
+    margin-bottom: 0.5rem;
+}
+
+/* 作品描述样式 */
+.portfolio-description {
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+    flex-grow: 1; /* 让描述占据剩余空间 */
+}
+
+/* 查看详情按钮样式 */
+.btn-view {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: var(--link-color);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-top: auto; /* 将按钮推到底部 */
+    text-align: center;
+    transition: background-color 0.2s ease;
+}
+
+/* 查看详情按钮悬停效果 */
+.btn-view:hover {
+    background-color: #0550a0;
+}
+
+/* 课程网格布局 */
+.courses-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* 课程网格响应式布局 */
+@media (min-width: 768px) {
+    .courses-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 课程列表样式 */
+.course-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* 课程项样式 */
+.course-item {
+    padding: 1rem;
+    background-color: var(--card-background);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* 课程项悬停效果 */
+.course-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+/* 课程头部样式 */
+.course-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* 课程标题样式 */
+.course-header h4 {
+    color: var(--link-color);
+    font-size: 1.1rem;
+    margin: 0;
+}
+
+/* 课程成绩样式 */
+.course-grade {
+    background-color: #ddf4ff;
+    color: var(--link-color);
+    padding: 0.2em 0.6em;
+    border-radius: 2em;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* 课程描述样式 */
+.course-description {
+    color: var(--secondary-color);
+    font-size: 0.95rem;
+}
+
+/* 证书区域网格布局 */
+.certificates {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+/* 证书项样式 */
+.certificate-item {
+    padding: 1.5rem;
+    background-color: var(--background-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+    transition: transform 0.2s ease;
+}
+
+/* 证书项悬停效果 */
+.certificate-item:hover {
+    transform: translateY(-3px);
+}
+
+/* 证书标题样式 */
+.certificate-item h3 {
+    color: var(--link-color);
+    margin-bottom: 0.5rem;
+}
+
+/* 技能详情区域网格布局 */
+.skills-detail {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+/* 技能详情响应式布局 */
+@media (min-width: 768px) {
+    .skills-detail {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* 技能类别详情样式 */
+.skill-category-detail {
+    background-color: var(--background-color);
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+/* 技能描述样式 */
+.skill-description {
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
+    font-size: 0.9rem;
+}
+
+/* 自我评价区域样式 */
+.self-evaluation {
+    padding: 1rem;
+    background-color: var(--background-color);
+    border-radius: 6px;
+    border: 1px solid var(--border-color);
+}
+
+/* 自我评价段落样式 */
+.self-evaluation p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+/* 自我评价最后一段样式 */
+.self-evaluation p:last-child {
+    margin-bottom: 0;
+}
+
+/* 顶部标题栏样式 - 全宽显示 */
+.top-bar {
+    background-color: #000;
+    color: #fff;
+    padding: 0.6rem 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    width: 100%;
+}
+
+/* 顶部标题栏容器 - 控制内容宽度 */
+.top-bar-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 当前时间显示样式 */
+.current-time {
+    font-size: 0.9rem;
+    white-space: nowrap; /* 防止时间文本换行 */
+    overflow: hidden;    /* 防止溢出 */
+    text-overflow: ellipsis; /* 如果溢出则显示省略号 */
+}
+
+/* 大学名称样式 */
+.university-name {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+/* 底部信息栏样式 - 全宽显示 */
+footer {
+    margin-top: 3rem;
+    width: 100%;
+}
+
+/* 底部主要信息区域样式 */
+.footer-main {
+    background-color: #003366; /* 深蓝色背景 */
+    color: #fff;
+    padding: 2rem 0;
+    width: 100%;
+}
+
+/* 底部信息容器 - 控制内容宽度 */
+.footer-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+/* 底部照片区域样式 */
+.footer-photo {
+    flex: 0 0 200px;
+}
+
+/* 底部照片样式 */
+.footer-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    border: none; /* 移除图片边框 */
+}
+
+/* 底部地址样式 */
+.footer-address {
+    flex: 1;
+    text-align: center;
+    font-size: 1.1rem;
+}
+
+/* 底部联系信息样式 */
+.footer-contact {
+    flex: 0 0 200px;
+}
+
+/* 底部联系信息项样式 */
+.footer-contact p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5rem;
+}
+
+/* 底部联系信息图标样式 */
+.footer-contact i {
+    margin-right: 0.5rem;
+}
+
+/* 底部版权信息样式 - 全宽显示 */
+.footer-copyright {
+    background-color: #fff;
+    color: #57606a;
+    padding: 0.5rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    width: 100%;
+}
+
+/* 底部版权信息容器 - 控制内容宽度 */
+.footer-copyright .container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* 底部信息栏响应式布局 */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .footer-photo {
+        flex: 0 0 100%;
+        max-width: 300px;
+    }
+    
+    .footer-contact {
+        flex: 0 0 100%;
+    }
+}
+
+/* 在小屏幕上调整顶部栏布局 */
+@media (max-width: 768px) {
+    .top-bar-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    
+    .current-time {
+        font-size: 0.8rem;
+    }
+}
+
+/* 响应式布局调整 */
+@media (max-width: 768px) {
+    .profile {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    
+    .profile-photo {
+        margin-bottom: 1.5rem;
+    }
+    
+    .profile-content {
+        text-align: center;
+    }
+    
+    .contact-info {
+        justify-content: center;
+    }
+} 

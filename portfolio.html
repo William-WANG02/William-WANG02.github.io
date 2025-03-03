@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>作品展示 | 张三的个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="current-time" id="current-time"></div>
+            <div class="university-name">HKUST(GZ) Juncheng WANG</div>
+        </div>
+    </div>
+
+    <button id="darkModeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <nav class="nav-bar fade-in">
+            <div class="nav-logo">
+                <img src="HKUSTGZlogo.png" alt="HKUST GZ Logo" class="nav-profile-pic">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">简历主页</a>
+                <a href="internships.html" class="nav-item">实习经历</a>
+                <a href="competitions.html" class="nav-item">比赛经历</a>
+                <a href="courses.html" class="nav-item">专业课程及技能</a>
+                <a href="portfolio.html" class="nav-item active">作品展示</a>
+            </div>
+        </nav>
+
+        <section class="section fade-in portfolio-page">
+            <h2>作品展示</h2>
+            
+            <div class="portfolio-grid">
+                <!-- 作品1 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>金融建模大赛作品</h3>
+                        <p class="portfolio-description">基于机器学习的行业分析模型，通过对历史数据的深度学习，预测行业发展趋势和投资机会。</p>
+                        <div class="tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">机器学习</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+
+                <!-- 作品2 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>行业研究报告</h3>
+                        <p class="portfolio-description">消费行业深度分析报告，包含市场规模、竞争格局、主要企业分析和投资建议。</p>
+                        <div class="tags">
+                            <span class="tag">行业研究</span>
+                            <span class="tag">数据分析</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 作品3 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>量化交易策略</h3>
+                        <p class="portfolio-description">基于技术指标和市场情绪分析的量化交易策略，回测显示年化收益超过15%。</p>
+                        <div class="tags">
+                            <span class="tag">量化交易</span>
+                            <span class="tag">策略研究</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 作品4 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>ESG投资分析框架</h3>
+                        <p class="portfolio-description">构建环境、社会和治理(ESG)因素评估框架，用于筛选可持续发展的投资标的。</p>
+                        <div class="tags">
+                            <span class="tag">ESG投资</span>
+                            <span class="tag">可持续金融</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 作品5 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>金融科技应用研究</h3>
+                        <p class="portfolio-description">区块链技术在供应链金融中的应用研究，包含技术架构设计和业务流程优化方案。</p>
+                        <div class="tags">
+                            <span class="tag">区块链</span>
+                            <span class="tag">供应链金融</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 作品6 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>投资组合优化模型</h3>
+                        <p class="portfolio-description">基于现代投资组合理论的资产配置模型，结合风险偏好和市场预期进行投资组合优化。</p>
+                        <div class="tags">
+                            <span class="tag">资产配置</span>
+                            <span class="tag">投资组合</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 作品7 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>宏观经济分析报告</h3>
+                        <p class="portfolio-description">中国经济季度分析报告，包含GDP、CPI、PPI等核心指标分析和未来趋势预测。</p>
+                        <div class="tags">
+                            <span class="tag">宏观经济</span>
+                            <span class="tag">政策分析</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+                
+                <!-- 作品8 -->
+                <div class="portfolio-item">
+                    <div class="portfolio-content">
+                        <h3>金融数据可视化平台</h3>
+                        <p class="portfolio-description">使用Tableau和Power BI开发的金融数据可视化平台，实现市场数据的实时监控和分析。</p>
+                        <div class="tags">
+                            <span class="tag">数据可视化</span>
+                            <span class="tag">商业智能</span>
+                        </div>
+                        <a href="#" class="btn-view">查看详情</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部信息栏 -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-photo">
+                    <img src="campus.png" alt="HKUST GZ Campus">
+                </div>
+                <div class="footer-address">
+                    HKUST, No.1 Du Xue Rd, Nansha District, Guangzhou
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> zhangsan@email.com</p>
+                    <p><i class="fas fa-phone"></i> +86 123 4567 8900</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 HKUST(GZ)    William Page
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>专业课程及技能 | 张三的个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- 顶部标题栏 -->
+    <div class="top-bar">
+        <div class="top-bar-container">
+            <div class="current-time" id="current-time"></div>
+            <div class="university-name">HKUST(GZ) Juncheng WANG</div>
+        </div>
+    </div>
+
+    <button id="darkModeToggle" class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </button>
+
+    <div class="container">
+        <nav class="nav-bar fade-in">
+            <div class="nav-logo">
+                <img src="HKUSTGZlogo.png" alt="HKUST GZ Logo" class="nav-profile-pic">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-item">简历主页</a>
+                <a href="internships.html" class="nav-item">实习经历</a>
+                <a href="competitions.html" class="nav-item">比赛经历</a>
+                <a href="courses.html" class="nav-item active">专业课程及技能</a>
+                <a href="portfolio.html" class="nav-item">作品展示</a>
+            </div>
+        </nav>
+
+        <section class="section fade-in">
+            <h2>专业课程</h2>
+            
+            <div class="courses-grid">
+                <!-- 核心课程 -->
+                <div class="course-category">
+                    <h3>核心课程</h3>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <div class="course-header">
+                                <h4>投资学</h4>
+                                <span class="course-grade">A+</span>
+                            </div>
+                            <p class="course-description">学习投资理论、资产定价模型和投资组合管理策略</p>
+                        </div>
+                        
+                        <div class="course-item">
+                            <div class="course-header">
+                                <h4>公司金融</h4>
+                                <span class="course-grade">A</span>
+                            </div>
+                            <p class="course-description">研究企业融资决策、资本结构和公司价值评估</p>
+                        </div>
+                        
+                        <div class="course-item">
+                            <div class="course-header">
+                                <h4>金融市场</h4>
+                                <span class="course-grade">A</span>
+                            </div>
+                            <p class="course-description">分析各类金融市场的运作机制和参与者行为</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 选修课程 -->
+                <div class="course-category">
+                    <h3>选修课程</h3>
+                    <div class="course-list">
+                        <div class="course-item">
+                            <div class="course-header">
+                                <h4>金融科技导论</h4>
+                                <span class="course-grade">A+</span>
+                            </div>
+                            <p class="course-description">探索区块链、人工智能等技术在金融领域的应用</p>
+                        </div>
+                        
+                        <div class="course-item">
+                            <div class="course-header">
+                                <h4>量化投资策略</h4>
+                                <span class="course-grade">A</span>
+                            </div>
+                            <p class="course-description">学习量化交易模型和算法交易策略</p>
+                        </div>
+                        
+                        <div class="course-item">
+                            <div class="course-header">
+                                <h4>风险管理</h4>
+                                <span class="course-grade">A-</span>
+                            </div>
+                            <p class="course-description">研究金融风险识别、评估和控制方法</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section fade-in">
+            <h2>专业技能详情</h2>
+            
+            <div class="skills-detail">
+                <!-- 金融分析技能 -->
+                <div class="skill-category-detail">
+                    <h3>金融分析技能</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="财务分析">
+                            <div class="skill-info">
+                                <span class="skill-name">财务分析</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">精通财务报表分析、比率分析和现金流分析</p>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="投资组合管理">
+                            <div class="skill-info">
+                                <span class="skill-name">投资组合管理</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">熟悉现代投资组合理论和资产配置策略</p>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="风险评估">
+                            <div class="skill-info">
+                                <span class="skill-name">风险评估</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">能够识别和评估市场风险、信用风险和操作风险</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- 技术工具 -->
+                <div class="skill-category-detail">
+                    <h3>技术工具</h3>
+                    <div class="skill-list">
+                        <div class="skill-item" data-skill="Excel高级应用">
+                            <div class="skill-info">
+                                <span class="skill-name">Excel高级应用</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">精通数据透视表、VBA和复杂财务模型构建</p>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Bloomberg Terminal">
+                            <div class="skill-info">
+                                <span class="skill-name">Bloomberg Terminal</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">熟练使用Bloomberg进行市场数据分析和研究</p>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Wind金融终端">
+                            <div class="skill-info">
+                                <span class="skill-name">Wind金融终端</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">能够使用Wind进行中国市场数据分析</p>
+                        </div>
+                        
+                        <div class="skill-item" data-skill="Python数据分析">
+                            <div class="skill-info">
+                                <span class="skill-name">Python数据分析</span>
+                                <span class="skill-percentage">0%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress"></div>
+                            </div>
+                            <p class="skill-description">使用pandas、numpy和matplotlib进行数据处理和可视化</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section fade-in">
+            <h2>证书与认证</h2>
+            <div class="certificates">
+                <div class="certificate-item">
+                    <h3>CFA Level I</h3>
+                    <p class="date">2022.06</p>
+                    <p>特许金融分析师一级考试通过</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <h3>金融风险管理师(FRM) Part I</h3>
+                    <p class="date">2023.05</p>
+                    <p>全球金融风险管理专业资格认证一级考试通过</p>
+                </div>
+                
+                <div class="certificate-item">
+                    <h3>证券从业资格证</h3>
+                    <p class="date">2021.09</p>
+                    <p>中国证券业协会颁发</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- 底部信息栏 -->
+    <footer>
+        <div class="footer-main">
+            <div class="footer-container">
+                <div class="footer-photo">
+                    <img src="campus.png" alt="HKUST GZ Campus">
+                </div>
+                <div class="footer-address">
+                    HKUST, No.1 Du Xue Rd, Nansha District, Guangzhou
+                </div>
+                <div class="footer-contact">
+                    <p><i class="fas fa-envelope"></i> zhangsan@email.com</p>
+                    <p><i class="fas fa-phone"></i> +86 123 4567 8900</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2025 HKUST(GZ)    William Page
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
