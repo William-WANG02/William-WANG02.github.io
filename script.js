@@ -35,19 +35,32 @@ const initSkillBars = () => {
 // 暗黑模式切换
 const initDarkMode = () => {
     const darkModeToggle = document.getElementById('darkModeToggle');
-    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    const body = document.body;
+    const icon = darkModeToggle.querySelector('i');
     
-    const toggleDarkMode = (e) => {
-        document.body.classList.toggle('dark-mode');
-        localStorage.setItem('darkMode', document.body.classList.contains('dark-mode'));
-    };
-
-    // 检查本地存储的主题设置
-    if (localStorage.getItem('darkMode') === 'true') {
-        document.body.classList.add('dark-mode');
+    // 检查本地存储中的主题偏好
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        icon.classList.remove('fa-moon');
+        icon.classList.add('fa-sun');
     }
 
-    darkModeToggle.addEventListener('click', toggleDarkMode);
+    // 切换暗黑模式
+    darkModeToggle.addEventListener('click', () => {
+        body.classList.toggle('dark-mode');
+        
+        // 更新图标
+        if (body.classList.contains('dark-mode')) {
+            icon.classList.remove('fa-moon');
+            icon.classList.add('fa-sun');
+            localStorage.setItem('theme', 'dark');
+        } else {
+            icon.classList.remove('fa-sun');
+            icon.classList.add('fa-moon');
+            localStorage.setItem('theme', 'light');
+        }
+    });
 };
 
 // 平滑滚动
@@ -97,35 +110,6 @@ function updateTime() {
 // 初始化时间显示并设置定时器每秒更新
 updateTime();
 setInterval(updateTime, 1000);
-
-// 暗黑模式切换功能
-const darkModeToggle = document.getElementById('darkModeToggle');
-const body = document.body;
-const icon = darkModeToggle.querySelector('i');
-
-// 检查本地存储中的主题偏好
-const savedTheme = localStorage.getItem('theme');
-if (savedTheme === 'dark') {
-    body.classList.add('dark-mode');
-    icon.classList.remove('fa-moon');
-    icon.classList.add('fa-sun');
-}
-
-// 切换暗黑模式
-darkModeToggle.addEventListener('click', () => {
-    body.classList.toggle('dark-mode');
-    
-    // 更新图标
-    if (body.classList.contains('dark-mode')) {
-        icon.classList.remove('fa-moon');
-        icon.classList.add('fa-sun');
-        localStorage.setItem('theme', 'dark');
-    } else {
-        icon.classList.remove('fa-sun');
-        icon.classList.add('fa-moon');
-        localStorage.setItem('theme', 'light');
-    }
-});
 
 // 添加淡入动画效果
 document.addEventListener('DOMContentLoaded', function() {
